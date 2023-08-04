@@ -1,7 +1,6 @@
 import Menu from "./Menu";
 
-Menu;
-const Home = () => {
+const SearchBar = () => {
   return (
     <div>
       <Menu />
@@ -9,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default SearchBar;
