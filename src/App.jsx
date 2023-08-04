@@ -1,9 +1,8 @@
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Onboarding from './components/Onboarding';
 import Home from './components/Home';
 import Store from './components/Store';
-
+import Appbar from './components/Appbar/Appbar';
 const App = () => {
   return (
     <Router>
@@ -12,6 +11,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/store" element={<Store />} />
       </Routes>
+      <Appbar/>
     </Router>
   );
 };

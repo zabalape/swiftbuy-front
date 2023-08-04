@@ -1,0 +1,70 @@
+.frameWrapper {
+  position: fixed; /* Cambiamos a posición fija */
+  bottom: 0; /* Lo colocamos en la parte inferior */
+  left: 0; /* También podrías ajustar el posicionamiento horizontal aquí */
+  background-color: #ffffff;
+  border-color: #00000033;
+  border-top-style: solid;
+  border-top-width: 1px;
+  height: 79px;
+  width: 100%; /* Ajustamos el ancho para que ocupe toda la pantalla */
+  display: flex; /* Aseguramos que el contenido esté en línea */
+   /* Centramos horizontalmente el contenido */
+  align-items: center; /* Centramos verticalmente el contenido */
+  z-index: 1000; /* Puedes ajustar el valor del z-index según tus necesidades */
+}
+  
+  .frameWrapper .div {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 60px;
+    left: 55px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .frameWrapper .frame2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .frameWrapper .iconInstanceNode {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  
+  .frameWrapper .home {
+    color: #000000;
+    font-family: "General Sans-Medium", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .frameWrapper .textWrapper {
+    color: #00000099;
+    font-family: "General Sans-Medium", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .frameWrapper .frame33 {
+    flex: 0 0 auto !important;
+  }
+  
+  .frameWrapper .frameInstance {
+    font-family: "Poppins-Regular", Helvetica !important;
+    font-weight: 400 !important;
+  }
+  
