@@ -1,0 +1,69 @@
+.frameWrapper {
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  background-color: #ffffff;
+  border-color: #00000033;
+  border-top-style: solid;
+  border-top-width: 1px;
+  height: 79px;
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  z-index: 1000; 
+}
+  
+  .frameWrapper .div {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 60px;
+    left: 55px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .frameWrapper .frame2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .frameWrapper .iconInstanceNode {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  
+  .frameWrapper .home {
+    color: #000000;
+    font-family: "General Sans-Medium", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .frameWrapper .textWrapper {
+    color: #00000099;
+    font-family: "General Sans-Medium", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .frameWrapper .frame33 {
+    flex: 0 0 auto !important;
+  }
+  
+  .frameWrapper .frameInstance {
+    font-family: "Poppins-Regular", Helvetica !important;
+    font-weight: 400 !important;
+  }
+  
