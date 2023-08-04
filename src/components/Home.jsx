@@ -1,12 +1,13 @@
 import Menu from "./Menu";
+import SearchBar from "./SearchBar";
 
-Menu;
 const Home = () => {
   return (
     <div>
+      <Menu />
+      <SearchBar/>
       <h1>Home</h1>
       
-      <Menu />
     </div>
   );
 };
