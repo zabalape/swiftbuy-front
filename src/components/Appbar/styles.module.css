@@ -1,17 +1,16 @@
 .frameWrapper {
-  position: fixed; /* Cambiamos a posición fija */
-  bottom: 0; /* Lo colocamos en la parte inferior */
-  left: 0; /* También podrías ajustar el posicionamiento horizontal aquí */
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
   background-color: #ffffff;
   border-color: #00000033;
   border-top-style: solid;
   border-top-width: 1px;
   height: 79px;
-  width: 100%; /* Ajustamos el ancho para que ocupe toda la pantalla */
-  display: flex; /* Aseguramos que el contenido esté en línea */
-   /* Centramos horizontalmente el contenido */
-  align-items: center; /* Centramos verticalmente el contenido */
-  z-index: 1000; /* Puedes ajustar el valor del z-index según tus necesidades */
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  z-index: 1000; 
 }
   
   .frameWrapper .div {
