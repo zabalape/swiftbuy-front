@@ -5,19 +5,12 @@ const SearchBar = () => {
           {/* Aquí puedes poner tu icono de búsqueda si lo deseas */}
         </div>
         <input
+          onChange={console.log('change')}
           type="text"
           className="text-black text-opacity-60 text-base font-normal outline-none border-none w-full h-full pl-10 bg-transparent"
           placeholder="Search anything"
         />
-        <button
-          className="absolute top-1/2 transform -translate-y-1/2 right-4 text-blue-500 hover:text-blue-600 transition-colors"
-          onClick={() => {
-            // Agregar aquí la lógica para realizar la búsqueda
-            console.log('Search clicked!');
-          }}
-        >
-          Search
-        </button>
+        
       </div>
     );
   };
