@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import close from "../assets/close.png";
-import { useState } from "react";
 
 const Comp1 = ({ toggleMenu }) => {
   return (
@@ -56,9 +56,25 @@ const Menu = () => {
     setMenuVisible(!menuVisible);
   };
 
+  const getMenuContent = () => {
+    if (menuVisible) {
+      return {
+        height: "797px", // Establece la altura cuando el menú está desplegado
+        content: <Comp1 toggleMenu={toggleMenu} />, // Aquí va el contenido del menú cuando está desplegado
+      };
+    } else {
+      return {
+        height: "23px", // Establece la altura cuando el menú no está desplegado
+        content: null, // No hay contenido cuando el menú no está desplegado
+      };
+    }
+  };
+
+  const { height, content } = getMenuContent();
+
   return (
-    <div className="w-[349px] h-[797px] relative">
-      {menuVisible && <Comp1 toggleMenu={toggleMenu} />}
+    <div className={`w-[349px] h-[${height}] relative`}>
+      {content}
       <X toggleMenu={toggleMenu} />
       {console.log(menuVisible)}
     </div>
